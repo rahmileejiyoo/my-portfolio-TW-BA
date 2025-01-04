@@ -1,2 +1,33 @@
-What work scope of Technical Writer and Business Analyst area included on?
-(Apa saja area scope kerja yang termasuk ke dalam pekerjan Tehnical Writer dan Business Analyst?
+Berikut kode </script> dari Tugas Javascript syntax Eduwork:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>JS Edujs</title>
+</head>
+<body>
+     <p id="edujs"></p>
+
+     <script>
+        // langkah 1: Buat 3 variabel
+        let variable1, variable2, variable3;
+        variable1 = 10;
+        variable2 = "saya belajar syntax javascript";
+        variable3 = 20;
+        // langkah 2: jumlahkan variabel pertama dan kedua
+        let hasil = variable1 + variable2;
+        
+        // langkah 3: menampilkan hasil awal
+        document.getElementById('edujs').innerHTML = hasil;
+
+        // langkah 4: Tangani masalah jika ada
+        if (typeof hasil === "string" && /[a-zA-Z]/.test(hasil)) {
+            //Jika hasil aneh (string dan mengandung huruf), gunakan variable 3;
+            document.getElementById('edujs').innerHTML = variable1 + variable3;
+        } else {
+            //jika hasil tidak aneh (masih numerik), tampilkan hasil asli
+            document.getElementById('edujs').innerHTML = "Hasil penjumlahan variable 1 dan variable2: " + hasil;
+        }
+     </script>
+</body>
+</html>
